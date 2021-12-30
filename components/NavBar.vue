@@ -14,10 +14,10 @@
                 <a href="projects" class="block inline-block">Projects</a>
             </li>
             <li class="flex-grow">
-                <a href="aboutus" class="block inline-block">About Us</a>
+                <a href="aboutme" class="block inline-block">About Me</a>
             </li>
             <li class="flex-grow">
-                <a href="contactus" class="block inline-block">Contact Us</a>
+                <a href="contactme" class="block inline-block">Contact Me</a>
             </li>
         </ul>
     </div>
