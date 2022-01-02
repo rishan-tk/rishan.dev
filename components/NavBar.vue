@@ -5,19 +5,19 @@
                 <!-- Logo -->
             </li>
             <li class="flex-grow">
-                <a href="/" class="block inline-block">Home</a>
+                <NuxtLink to="/">Home</NuxtLink>
             </li>
             <li class="flex-grow">
-                <a href="blog" class="block inline-block">Blog</a>
+                <NuxtLink to="/blog">Blog</NuxtLink>
             </li>
             <li class="flex-grow">
-                <a href="projects" class="block inline-block">Projects</a>
+                <NuxtLink to="/projects">Projects</NuxtLink>
             </li>
             <li class="flex-grow">
-                <a href="aboutme" class="block inline-block">About Me</a>
+                <NuxtLink to="/aboutme">About Me</NuxtLink>
             </li>
             <li class="flex-grow">
-                <a href="contactme" class="block inline-block">Contact Me</a>
+                <NuxtLink to="/contactme">Contact Me</NuxtLink>
             </li>
         </ul>
     </div>

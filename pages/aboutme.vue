@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div>
     <NavBar />
     <Content />
   </div>
@@ -9,6 +9,16 @@
 import Vue from 'vue'
 
 export default Vue.extend({
-  name: 'AboutMe'
+  name: 'AboutMe',
+  head: {
+    title: 'About Me',
+    meta: [
+      {
+        hid: 'description',
+        name: 'description',
+        content: 'Home page description'
+      }
+    ],
+  }
 })
 </script>
