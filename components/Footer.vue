@@ -1,5 +1,5 @@
 <template>
- <footer class="border-t border-gray-200 bg-dark-nav">
+ <footer id="Footer" class="border-t border-gray-200 bg-dark-nav">
       <div
         class="
           container

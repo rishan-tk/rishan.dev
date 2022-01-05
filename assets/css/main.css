@@ -2,3 +2,7 @@ body {
     color: #e8e6e3;
     background-color: #181a1b;
 }
+
+#NavBar, #Footer{
+    border-color: rgba(31, 52, 74, 0.06);
+}

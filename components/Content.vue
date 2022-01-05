@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-dark h-full">
+    <div class="h-full">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pulvinar in lectus quis pretium. Integer auctor sem odio, et scelerisque erat pellentesque id. Suspendisse a faucibus nunc, vel mollis velit. Nam consequat velit tortor, sit amet posuere eros dictum vitae. Vestibulum blandit arcu ac augue lobortis, vel vehicula nisl interdum. Praesent eu sem lorem. Nunc congue non augue sit amet rutrum. Pellentesque vehicula massa vel nisi luctus, quis placerat orci imperdiet.
 
 Vivamus aliquam convallis sem et bibendum. Sed eleifend cursus metus vel gravida. Sed ut egestas felis. Aenean gravida arcu risus, et dictum est sollicitudin eget. Sed congue felis nec massa vestibulum, sed bibendum orci eleifend. Aliquam tempus dui ac sodales aliquam. Nunc cursus leo pulvinar mattis iaculis. Duis porttitor pharetra nunc eget porta. Donec sit amet commodo nunc, eget ultricies tellus. Integer risus orci, consectetur quis aliquam eu, pharetra sit amet est. Mauris vehicula ullamcorper ex, in facilisis tortor sodales non. Sed euismod neque et tellus pulvinar hendrerit. Sed mollis, nunc non gravida gravida, risus neque auctor tellus, vitae congue sem arcu nec augue. Fusce dictum odio non sodales vulputate. Donec ac justo laoreet, lobortis massa at, fermentum odio.
