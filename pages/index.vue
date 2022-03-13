@@ -4,9 +4,9 @@
     <div class="container
         flex flex-col flex-wrap
         px-4
-        py-16
+        py-52
         mx-auto">
-        <Content />
+        <Home />
     </div>
     <Footer />
   </div>
