@@ -1,6 +1,6 @@
 <template>
     <div id="NavBar" class ="container w-full bg-dark-nav flex items-center justify-between flex-wrap p-5">
-        <div id="logo" class="flex w-1/5">Logo</div>
+        <div id="logo" class="flex w-1/5"><img src="~/assets/img/logo-ts.png"/></div>
         <div id="links" class="flex w-4/5">
             <div class="w-full w-1/3"></div>
             <div class="w-full w-1/3">
