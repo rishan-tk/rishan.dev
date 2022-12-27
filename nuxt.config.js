@@ -12,7 +12,7 @@ export default {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ],
     bodyAttrs: {
-        class: 'bg-dark'
+      class: 'bg-dark'
     }
   },
 

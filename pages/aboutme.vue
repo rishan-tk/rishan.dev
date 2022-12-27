@@ -25,7 +25,7 @@ export default Vue.extend({
         name: 'description',
         content: 'Home page description'
       }
-    ],
+    ]
   }
 })
 </script>
