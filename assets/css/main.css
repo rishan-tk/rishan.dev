@@ -1,21 +1,125 @@
+/* Universal styles */
 body {
     color: #e8e6e3;
     background-color: #181a1b;
 }
 
-#NavBar, #Footer{
-    border-color: rgba(31, 52, 74, 0.06);
-    height: 80px;
-    width: 100%;
-    padding: 5px;
+/* Mobile Devices */
+@media (max-width: 320px){
+    #NavBar, #Footer{
+        border-color: rgba(31, 52, 74, 0.06);
+        height: 80px;
+        width: 100%;
+        padding: 5px;
+    }
+    
+    #logo{
+        height: 100%;
+        width: 15%;
+    }
+    
+    #links{
+        height: 100%;
+        width: 85%;
+    }
 }
 
-#logo{
-    height: 100%;
-    width: 15%;
+/* Mobile Devices */
+@media(min-width: 320px){
+    #NavBar, #Footer{
+        border-color: rgba(31, 52, 74, 0.06);
+        height: 80px;
+        width: 100%;
+        padding: 5px;
+    }
+    
+    #logo{
+        height: 100%;
+        width: 15%;
+    }
+    
+    #links{
+        height: 100%;
+        width: 85%;
+    }
 }
 
-#links{
-    height: 100%;
-    width: 85%;
+/* iPads, tablets */
+@media(min-width: 481px){
+    #NavBar, #Footer{
+        border-color: rgba(31, 52, 74, 0.06);
+        height: 80px;
+        width: 100%;
+        padding: 5px;
+    }
+    
+    #logo{
+        height: 100%;
+        width: 15%;
+    }
+    
+    #links{
+        height: 100%;
+        width: 85%;
+    }
+}
+
+/* Small screens, laptops */
+@media(min-width: 769px){
+    #NavBar, #Footer{
+        border-color: rgba(31, 52, 74, 0.06);
+        height: 80px;
+        width: 100%;
+        padding: 5px;
+    }
+    
+    #logo{
+        height: 100%;
+        width: 15%;
+    }
+    
+    #links{
+        height: 100%;
+        width: 85%;
+    }
+}
+
+/* Desktop, large screens */
+@media(min-width: 1025px){
+    #NavBar, #Footer{
+        border-color: rgba(31, 52, 74, 0.06);
+        height: 80px;
+        width: 100%;
+        padding: 5px;
+    }
+    
+    #logo{
+        height: 100%;
+        width: 15%;
+    }
+    
+    #links{
+        height: 100%;
+        width: 85%;
+    }
+}
+
+/* Extra large screens, TV */
+@media(min-width: 1200px){
+    #NavBar, #Footer{
+        border-color: rgba(31, 52, 74, 0.06);
+        height: 80px;
+        width: 100%;
+        padding: 5px;
+    }
+    
+    #logo{
+        height: 100%;
+        width: 15%;
+    }
+    
+    #links{
+        height: 100%;
+        width: 85%;
+    }
 }
