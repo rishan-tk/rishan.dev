@@ -4,7 +4,7 @@
         <div id="linksContainer" class="flex">
             <div class="linksPadding"></div>
             <div id="navLinks">
-                <ul id="navlinks" class="flex-grow flex text-gray-200 hover:text-sky-400">
+                <ul class="flex-grow flex text-gray-200 hover:text-sky-400">
                     <li class="flex-grow w-1/4">
                         <NuxtLink to="/">Home</NuxtLink>
                     </li>
