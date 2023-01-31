@@ -41,7 +41,13 @@ export default defineNuxtConfig({
   modules: [
     '@nuxtjs/tailwindcss',
     '@nuxt/content'
-  ]
+  ],
 
-
+  "nitro": {
+    "output": {
+        dir: 'output',
+        serverDir: 'output/server',
+        publicDir: 'output/public'
+    }
+}
 })
