@@ -1,8 +1,8 @@
 <template>
     <div class="h-full">
-        Blog
+        Contact Me
 
-        Tech blog about things i'm learning, working on, interested in and updates i follow
+        You can contact me via my socials or this webform
     </div>
   </template>
   

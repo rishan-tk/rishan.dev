@@ -3,6 +3,8 @@
         Projects
 
         Projects that i am working on
+
+        Discord Music Bot
     </div>
   </template>
   

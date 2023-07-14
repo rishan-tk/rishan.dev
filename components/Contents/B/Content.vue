@@ -2,7 +2,7 @@
     <div class="h-full">
         Blog
 
-        Tech blog about things i'm learning, working on, interested in and updates i follow
+        Tech blog about things I'm learning, working on, interested in and updates I follow
     </div>
   </template>
   
