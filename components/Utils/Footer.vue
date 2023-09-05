@@ -1,15 +1,9 @@
 <template>
- <footer id="Footer" class="border-t border-gray-200 bg-dark-nav">
+ <footer id="Footer" class="w-full bg-dark-nav flex items-center justify-between flex-wrap border-t border-gray-200">
       <div class="container flex flex-col flex-wrap px-4 py-16 mx-auto
           md:items-center lg:items-start md:flex-row md:flex-nowrap">
         <div class="flex-shrink-0 w-64 mx-auto text-center md:mx-0 md:text-left">
-          <a class="flex items-center justify-center text-4xl font-bold text-blue-700 md:justify-start">Logo</a>
-          <p class="mt-2 text-sm text-gray-500">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
-            at sequi cum, impedit fuga in placeat illo eum minima possimus est
-            perferendis distinctio explicabo eos natus consequuntur blanditiis
-            odio optio?
-          </p>
+          <div id="logo" class="flex"></div>
         </div>
         <div class="justify-between w-full mt-4 text-center lg:flex">
           <div class="w-full px-4 lg:w-1/2 md:w-1/2">
