@@ -16,7 +16,7 @@
           </div>
         </div>
       </div>
-      <div class="flex justify-center">
+      <div class="container flex justify-center px-4 py-4 mx-auto">
         <p class="text-base text-gray-400">All rights reserved by @ Rishan Thirukumar 2021</p>
       </div>
     </footer>

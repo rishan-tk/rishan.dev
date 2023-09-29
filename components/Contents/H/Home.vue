@@ -1,7 +1,7 @@
 <template>
     <img src="~/assets/img/rishandev-logos_white2.png"/>
 
-    Welcome 
+    <span>Welcome </span> 
 </template>
 
 <script>
