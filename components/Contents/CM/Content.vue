@@ -1,16 +1,16 @@
 <template>
-    <div class="h-full">
-        Contact Me
+    <div class="heading container">CONTACT ME</div>
+    <div class="main-content container">
 
         You can contact me via my socials or this webform
     </div>
-  </template>
+</template>
   
-  <script>
-  import { defineComponent } from 'vue'
-  
-  export default defineComponent({
-    name: 'Content'
-  })
-  </script>
+<script>
+    import { defineComponent } from 'vue'
+    
+    export default defineComponent({
+        name: 'Content'
+    })
+</script>
   

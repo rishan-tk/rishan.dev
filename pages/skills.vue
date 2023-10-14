@@ -2,7 +2,7 @@
   <div class="root-div"> <!-- root element-->
     <UtilsNavBar />
     <div class="container content">
-        <ContentsHHome />
+        <ContentsSContent />
     </div>
     <UtilsFooter />
   </div> <!-- root element-->
@@ -12,16 +12,16 @@
 import { defineComponent } from 'vue'
 
 export default defineComponent({
-  name: 'IndexPage',
+  name: 'Skills',
   head: {
-    title: 'Home',
+    title: 'Skills',
     meta: [
       {
         hid: 'description',
         name: 'description',
-        content: 'Home page description'
+        content: 'Skills, C++, Python, Java, HTML, CSS'
       }
-    ],
+    ]
   }
 })
 </script>

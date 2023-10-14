@@ -16,7 +16,6 @@ export default defineNuxtConfig({
           { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
         ],
         bodyAttrs: {
-          class: 'bg-dark-1'
         }
     }
   },
@@ -41,5 +40,6 @@ export default defineNuxtConfig({
 
   modules: [
     '@nuxtjs/tailwindcss',
+    '@nuxt/image',
   ],
 })

@@ -1,11 +1,7 @@
 <template>
-  <div> <!-- root element-->
+  <div class="root-div"> <!-- root element-->
     <UtilsNavBar />
-    <div class="container
-        flex flex-col flex-wrap
-        px-4
-        py-16
-        mx-auto">
+    <div class="container content">
         <ContentsBContent />
     </div>
     <UtilsFooter />

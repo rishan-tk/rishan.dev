@@ -1,33 +1,33 @@
 <template>
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <div id="NavBar" :class="{'responsive': isNavbarOpen}" class ="w-full bg-dark-nav flex items-center justify-between flex-wrap">
-        <div id="logo" class="flex"></div>
-        <div id="linksContainer" class="flex">
-            <div class="linksPadding1"></div>
-            <div id="navLinks">
-                <ul class="flex-grow flex text-gray-200">
-                    <li class="flex-grow w-1/4">
-                        <NuxtLink to="/">Home</NuxtLink>
-                    </li>
-                    <li class="flex-grow w-1/4">
-                        <NuxtLink to="/blog">Blog</NuxtLink>
-                    </li>
-                    <li class="flex-grow w-1/4">
-                        <NuxtLink to="/projects">Projects</NuxtLink>
-                    </li>
-                    <li class="flex-grow w-1/4">
-                        <NuxtLink to="/aboutme">About Me</NuxtLink>
-                    </li>
-                </ul>
-            </div>
-            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-            <a href="javascript:void(0);" class="icon" @click="toggleNavbar">
-                <i class="fa fa-bars"></i>
-            </a>
-            <div class="linksPadding2"></div>
-        </div>
-    </div>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <nav class="">
+        <ul class="side-nav text-black">
+            <li class="">
+                <div class="logo">
+                    <NuxtImg src="/img/logo_black.png" alt="Logo"/>
+                </div>
+                <div class="text-center logo-caption">Rishan Thirukumar</div>
+            </li>
+            <li class="bold">
+                <NuxtLink to="/"><i class="fa-solid fa-house"></i><span>Home</span></NuxtLink>
+            </li>
+            <li class="bold">
+                <NuxtLink to="/projects"><i class="fa-solid fa-rectangle-list"></i><span>Projects</span></NuxtLink>
+            </li>
+            <li class="bold">
+                <NuxtLink to="/skills"><i class="fa-solid fa-chart-simple"></i><span>Skills</span></NuxtLink>
+            </li>
+            <li class="bold">
+                <NuxtLink to="/blog"><i class="fa-solid fa-pen"></i><span>Blog</span></NuxtLink>
+            </li>
+            <li class="bold">
+                <NuxtLink to="/aboutme"><i class="fa-solid fa-user"></i><span>About Me</span></NuxtLink>
+            </li>
+            <li class="bold">
+                <NuxtLink to="/contactme"><i class="fa-solid fa-envelope"></i><span>Contact Me</span></NuxtLink>
+            </li>
+        </ul>
+    </nav>
 </template>
 
 

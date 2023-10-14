@@ -1,18 +1,20 @@
 <template>
-    <div class="h-full">
-        Projects
+    <div class="heading container">PROJECTS</div>
+    <div class="main-content container">
 
-        Projects that i am working on
+        Projects that I am working on:
 
         Discord Music Bot
+
+
     </div>
-  </template>
+</template>
   
   <script>
   import { defineComponent } from 'vue'
   
   export default defineComponent({
-    name: 'Content'
+    name: 'ProjectsContent'
   })
   </script>
   
