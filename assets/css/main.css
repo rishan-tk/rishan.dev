@@ -42,7 +42,8 @@ nav{
 
 footer{
     padding: 5px;
-    background-color: #f1f1f1;
+    background-color: #FFF;
+    box-shadow: inset 0px 0px 5px 5px #f1f1f1;
 }
 
 footer > div {
@@ -84,6 +85,8 @@ footer > div {
 
 .main-content{
     padding: 25px 25px 25px 50px;
+    background-color: #FFF;
+    box-shadow: inset 0px 0px 5px 5px #f1f1f1;
 }
 
 .main-content p{
@@ -99,11 +102,54 @@ footer > div {
     font-size: 3rem;
     padding: 25px;
     background-color: #FFF;
+    box-shadow: inset 0px 0px 5px 5px #f1f1f1;
+}
+
+/* Skills Page */
+.caption{
+    height: 20%;
+}
+
+.skills, .tools{
+    width:100%;
+    max-width: 100%;
+    height: 250px;
+}
+
+.skills ul, .tools ul{
+    display: flex;
+    height:80%;
+    width: 100%;
+    padding: 0 10px 0 10px
+}
+
+.skills li, .tools li{
+    display: flex;
+    justify-content: center; /* Horizontal centering */
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    height:100%;
+    width: 100%;
+    padding: 0 10px 0 10px
+}
+
+.skills img, .tools img{
+    height:80%;
+    
+}
+
+.skills ul p, .tools ul p{
+    height: 20%;
 }
 
 /* Mobile Nav 
 Mobile phones Samsung+ - Ultra*/
 @media(min-width: 320px){
+    html{
+        font-size: 10px;
+    }
+
     #NavBar, #Footer{
     }
 
@@ -135,6 +181,9 @@ Mobile phones Samsung+ - Ultra*/
 
 /* iPads, tablets */
 @media(min-width: 481px){
+    html{
+        font-size: 12px;
+    }
     #NavBar, #Footer{
     }
 
@@ -172,6 +221,10 @@ Mobile phones Samsung+ - Ultra*/
 /* Desktop Nav 
 Small screens, laptops */
 @media(min-width: 769px){
+    html{
+        font-size: 14px;
+    }
+
     #NavBar, #Footer{
     }
 
@@ -207,6 +260,10 @@ Small screens, laptops */
 
 /* Desktop, large screens */
 @media(min-width: 1025px){
+    html{
+        font-size: 16px;
+    }
+
     #NavBar, #Footer{
     }
 
@@ -242,6 +299,10 @@ Small screens, laptops */
 
 /* Extra large screens, TV */
 @media(min-width: 1200px){
+    html{
+        font-size: 18px;
+    }
+
     #NavBar, #Footer{
     }
 
