@@ -94,6 +94,10 @@ footer > div {
     padding:10px;
 }
 
+.homepage-banner{
+    height: 100vh;
+}
+
 .homepage-banner > img{
     width:100%;
 }

@@ -1,5 +1,4 @@
 <template>
-    <div class="heading container">HOME</div>
     <div class="main-content container">
         <div class="homepage-banner">
             <NuxtImg src="/img/rishandev-logos_black.png" alt="Homepage Banner"/>
