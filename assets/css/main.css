@@ -135,14 +135,17 @@ footer > div {
 }
 
 .heading{
-    height: 20vh;
+    height: 120px;
     padding: 25px;
     background-color: #FFF;
     box-shadow: inset 0px 0px 5px 5px #f1f1f1;
 }
 
 .heading h1{
-    font-size: 3rem;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
 }
 
 /* Skills Page */
@@ -300,8 +303,13 @@ Mobile phones Samsung+ - Ultra*/
         margin-left: 0%;
     }
 
+    .heading{
+        height: 100px;
+    }
+
     .heading h1{
-        text-align: center;
+        justify-content: center;
+        font-size: 2.5rem;
     }
 }
 
@@ -353,8 +361,12 @@ Mobile phones Samsung+ - Ultra*/
         margin-left: 0%;
     }
 
+    .heading{
+        height: 110px;
+    }
+
     .heading h1{
-        text-align: center;
+        font-size: 2.5rem;
     }
 }
 
@@ -363,7 +375,7 @@ Mobile phones Samsung+ - Ultra*/
 Small screens, laptops */
 @media(min-width: 769px){
     html{
-        font-size: 14px;
+        font-size: 16px;
     }
 
     nav ul>li{
@@ -408,8 +420,13 @@ Small screens, laptops */
         margin-left: 25%;
     }
 
+    .heading{
+        height: 120px;
+    }
+
     .heading h1{
-        text-align: left;
+        justify-content: left;
+        font-size: 2.75rem;
     }
 }
 
@@ -419,11 +436,18 @@ Small screens, laptops */
         font-size: 16px;
     }
 
+    nav ul>li{
+        padding: 8px;
+    }
+    
+    nav ul>li i{
+        padding: 4px;
+    }
+
     .side-nav{
         width: 20%;
         max-width: 20%;
     }
-    
 
     .logo > img{
         width: 75%;
@@ -445,12 +469,8 @@ Small screens, laptops */
         margin-left: 20%;
     }
 
-    nav ul>li{
-        padding: 8px;
-    }
-    
-    nav ul>li i{
-        padding: 4px;
+    .heading h1{
+        font-size: 3rem;
     }
 }
 
@@ -460,13 +480,21 @@ Small screens, laptops */
         font-size: 18px;
     }
 
-    .logo > img{
-        width: 75%;
+    nav ul>li{
+        padding: 10px;
+    }
+    
+    nav ul>li i{
+        padding: 5px;
     }
 
     .side-nav{
         width: 15%;
         max-width: 15%;
+    }
+
+    .logo > img{
+        width: 75%;
     }
 
     .logo-caption{
@@ -489,11 +517,7 @@ Small screens, laptops */
         margin-left: 15%;
     }
 
-    nav ul>li{
-        padding: 10px;
-    }
-    
-    nav ul>li i{
-        padding: 5px;
+    .heading h1{
+        font-size: 3rem;
     }
 }
