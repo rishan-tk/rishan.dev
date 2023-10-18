@@ -21,7 +21,7 @@
             <div class="form-group">
                 <label for="privacyPolicy">
                     <input type="checkbox" id="privacyPolicy" v-model="privacyPolicyAccepted" />
-                    I accept the <a href="">Privacy Policy</a>Privacy Policy
+                    I accept the <a href="">Privacy Policy</a>
                 </label>
             </div>
             <button type="submit">Submit</button>
