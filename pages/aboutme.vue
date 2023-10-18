@@ -2,7 +2,7 @@
   <div class="root-div"> <!-- root element-->
     <UtilsNavBar />
     <div class="container content">
-        <ContentsAMContent />
+        <ContentsAboutMeContent />
     </div>
     <UtilsFooter />
   </div> <!-- root element-->

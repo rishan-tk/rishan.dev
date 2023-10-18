@@ -13,7 +13,7 @@
             </div><!-- Second Section for Links-->
         </div>
         <div class="container copyright">
-            <p>All rights reserved by @ Rishan Thirukumar 2021</p>
+            <p>All rights reserved by @ Rishan Thirukumar 2023</p>
         </div>
     </footer>
 </template>

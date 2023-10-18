@@ -1,6 +1,7 @@
 /* Universal styles */
 html{
     font-size: 18px;
+    font-family: Arial, sans-serif;
 }
 
 body {
@@ -30,6 +31,8 @@ nav{
 
 .side-nav {
     position: fixed;
+    display: flex;
+    flex-direction: column;
     left: 0;
     top: 0;
     margin: 0;
@@ -114,7 +117,7 @@ footer > div {
 }
 
 /* Skills Page */
-.caption{
+.skills .caption{
     height: 20%;
 }
 
@@ -126,7 +129,7 @@ footer > div {
 
 .skills ul, .tools ul{
     display: flex;
-    height:80%;
+    max-height:80%;
     width: 100%;
     padding: 0 10px 0 10px
 }
@@ -137,18 +140,77 @@ footer > div {
     align-items: center;
     flex-direction: column;
     text-align: center;
-    height:100%;
     width: 100%;
     padding: 0 10px 0 10px
 }
 
-.skills img, .tools img{
+.logo-img{
     height:80%;
-    
+}
+
+.logo-img > img{
+    max-width: 100%; 
+    max-height: 100%; 
+    width: auto; 
+    height: auto;
 }
 
 .skills ul p, .tools ul p{
     height: 20%;
+}
+
+/* Contact Me Page */
+.socials  ul > li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    padding: 0 10px 0 10px
+}
+.socials .caption{
+    width:100%;
+}
+.socials .links{
+    width:100%;
+}
+
+.contact-form > div, .contact-form form {
+    padding:10px;
+}
+
+.contact-form .form-group {
+    margin-bottom: 15px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact-form button:hover {
+    background-color: #45a049;
 }
 
 /* Mobile Nav 
@@ -162,8 +224,9 @@ Mobile phones Samsung+ - Ultra*/
     }
 
     .side-nav{
-        width: 35%;
-        max-width: 35%;
+        display: none;
+        width: 100%;
+        max-width: 100%;
     }
 
     .logo-caption{
@@ -171,9 +234,9 @@ Mobile phones Samsung+ - Ultra*/
     }
 
     footer{
-        width: 65%;
-        max-width: 65%;
-        margin-left: 35%;
+        width: 100%;
+        max-width: 100%;
+        margin-left: 0%;
     }
 
     #footer-logo > img{
@@ -181,9 +244,9 @@ Mobile phones Samsung+ - Ultra*/
     }
 
     .content{
-        width: 65%;
-        max-width: 65%;
-        margin-left: 35%;
+        width: 100%;
+        max-width: 100%;
+        margin-left: 100%;
     }
 }
 
@@ -196,8 +259,9 @@ Mobile phones Samsung+ - Ultra*/
     }
 
     .side-nav{
-        width: 30%;
-        max-width: 30%;
+        display: none;
+        width: 100%;
+        max-width: 100%;
     }
 
     .logo-caption{
@@ -205,15 +269,15 @@ Mobile phones Samsung+ - Ultra*/
     }
 
     footer{
-        width: 70%;
-        max-width: 70%;
-        margin-left: 30%;
+        width: 100%;
+        max-width: 100%;
+        margin-left: 0%;
     }
 
     .content{
-        width: 70%;
-        max-width: 70%;
-        margin-left: 30%;
+        width: 100%;
+        max-width: 100%;
+        margin-left: 0%;
     }
 
     nav ul>li{
@@ -237,6 +301,7 @@ Small screens, laptops */
     }
 
     .side-nav{
+        display:flex;
         width: 25%;
         max-width: 25%;
     }

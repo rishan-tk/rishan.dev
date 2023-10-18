@@ -1,6 +1,6 @@
 <template>
-    <div class="heading container">PROJECTS</div>
-    <div class="main-content container">
+    <div class="heading">PROJECTS</div>
+    <div class="main-content">
 
         Projects that I am working on:
 

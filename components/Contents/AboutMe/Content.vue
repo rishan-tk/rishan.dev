@@ -1,6 +1,6 @@
 <template>
-    <div class="heading container">ABOUT ME</div>
-    <div class="main-content container">
+    <div class="heading">ABOUT ME</div>
+    <div class="main-content">
         Brief Intro
 
         What I'm doing
