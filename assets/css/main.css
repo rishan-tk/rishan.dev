@@ -51,6 +51,15 @@ nav{
     align-items: center;
 }
 
+.side-nav li a{
+    width: 150px;
+    display: flex;
+}
+
+.side-nav li a i {
+    width: 40px
+}
+
 #mobile-menu-button{
     top:0;
     right: 0;
