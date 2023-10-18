@@ -2,7 +2,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <nav class="">
         <ul id="navbar" class="side-nav text-black">
-            <li class="">
+            <li class="bold nav-logo">
                 <div class="logo">
                     <NuxtImg src="/img/logo_black.png" alt="Logo"/>
                 </div>

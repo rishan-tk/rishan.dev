@@ -272,6 +272,10 @@ Mobile phones Samsung+ - Ultra*/
         display: flex;
     }
 
+    .side-nav > .nav-logo{
+        display: none;
+    }
+
     .logo > img{
         width: 50%;
     }
@@ -325,6 +329,10 @@ Mobile phones Samsung+ - Ultra*/
         display: flex;
     }
 
+    .side-nav > .nav-logo{
+        display: none;
+    }
+
     .logo > img{
         width: 50%;
     }
@@ -372,6 +380,10 @@ Small screens, laptops */
         max-width: 25%;
     }
 
+    .side-nav > .nav-logo{
+        display: flex;
+    }
+
     .logo > img{
         width: 60%;
     }
@@ -411,6 +423,7 @@ Small screens, laptops */
         width: 20%;
         max-width: 20%;
     }
+    
 
     .logo > img{
         width: 75%;
