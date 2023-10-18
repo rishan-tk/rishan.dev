@@ -33,14 +33,40 @@ nav{
     position: fixed;
     display: flex;
     flex-direction: column;
+    flex: 1;
     left: 0;
     top: 0;
     margin: 0;
     height: 100vh;
-    padding-bottom: 60px;
     background-color: #FFF;
     z-index: 999;
     will-change: left;
+}
+
+.side-nav li{
+    flex: 1; /* Make each li fill the available vertical space equally */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#mobile-menu-button{
+    top:0;
+    right: 0;
+    display: none;
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    z-index: 1000;
+}
+
+#mobile-menu-button button{
+    width: 100%;
+    height: 100%;
+}
+#mobile-menu-button i{
+    font-size: 50px;
 }
 
 footer{
@@ -110,10 +136,13 @@ footer > div {
 
 .heading{
     height: 20vh;
-    font-size: 3rem;
     padding: 25px;
     background-color: #FFF;
     box-shadow: inset 0px 0px 5px 5px #f1f1f1;
+}
+
+.heading h1{
+    font-size: 3rem;
 }
 
 /* Skills Page */
@@ -221,10 +250,7 @@ footer > div {
 Mobile phones Samsung+ - Ultra*/
 @media(min-width: 320px){
     html{
-        font-size: 10px;
-    }
-
-    #NavBar, #Footer{
+        font-size: 14px;
     }
 
     .side-nav{
@@ -233,8 +259,25 @@ Mobile phones Samsung+ - Ultra*/
         max-width: 100%;
     }
 
+    .side-nav ul{
+        padding:10px;
+    }
+
+    .side-nav li{
+        text-align: center;
+        padding: 10px;
+    }
+
+    #mobile-menu-button{
+        display: flex;
+    }
+
+    .logo > img{
+        width: 50%;
+    }
+
     .logo-caption{
-        font-size: 1rem;
+        font-size: 1.75rem;
     }
 
     footer{
@@ -252,14 +295,24 @@ Mobile phones Samsung+ - Ultra*/
         max-width: 100%;
         margin-left: 100%;
     }
+
+    .heading h1{
+        text-align: center;
+    }
 }
 
 /* iPads, tablets */
 @media(min-width: 481px){
     html{
-        font-size: 12px;
+        font-size: 16px;
     }
-    #NavBar, #Footer{
+
+    nav ul>li{
+        padding: 8px;
+    }
+    
+    nav ul>li i{
+        padding: 4px;
     }
 
     .side-nav{
@@ -268,8 +321,16 @@ Mobile phones Samsung+ - Ultra*/
         max-width: 100%;
     }
 
+    #mobile-menu-button{
+        display: flex;
+    }
+
+    .logo > img{
+        width: 50%;
+    }
+
     .logo-caption{
-        font-size: 1.1rem;
+        font-size: 1.75rem;
     }
 
     footer{
@@ -284,12 +345,8 @@ Mobile phones Samsung+ - Ultra*/
         margin-left: 0%;
     }
 
-    nav ul>li{
-        padding: 8px;
-    }
-    
-    nav ul>li i{
-        padding: 4px;
+    .heading h1{
+        text-align: center;
     }
 }
 
@@ -301,7 +358,12 @@ Small screens, laptops */
         font-size: 14px;
     }
 
-    #NavBar, #Footer{
+    nav ul>li{
+        padding: 6px;
+    }
+    
+    nav ul>li i{
+        padding: 3px;
     }
 
     .side-nav{
@@ -310,8 +372,16 @@ Small screens, laptops */
         max-width: 25%;
     }
 
+    .logo > img{
+        width: 60%;
+    }
+
     .logo-caption{
-        font-size: 1.3rem;
+        font-size: 1.75rem;
+    }
+
+    #mobile-menu-button{
+        display: none;
     }
 
     footer{
@@ -326,12 +396,8 @@ Small screens, laptops */
         margin-left: 25%;
     }
 
-    nav ul>li{
-        padding: 6px;
-    }
-    
-    nav ul>li i{
-        padding: 3px;
+    .heading h1{
+        text-align: left;
     }
 }
 
@@ -341,12 +407,13 @@ Small screens, laptops */
         font-size: 16px;
     }
 
-    #NavBar, #Footer{
-    }
-
     .side-nav{
         width: 20%;
         max-width: 20%;
+    }
+
+    .logo > img{
+        width: 75%;
     }
 
     .logo-caption{
@@ -380,7 +447,8 @@ Small screens, laptops */
         font-size: 18px;
     }
 
-    #NavBar, #Footer{
+    .logo > img{
+        width: 75%;
     }
 
     .side-nav{
@@ -389,7 +457,7 @@ Small screens, laptops */
     }
 
     .logo-caption{
-        font-size: 1.75rem;
+        font-size: 1.25rem;
     }
 
     footer{

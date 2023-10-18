@@ -1,5 +1,8 @@
 <template>
-    <div class="heading">CONTACT ME</div>
+    <div class="heading">
+        <h1>CONTACT ME</h1>
+        <MobileMenuButton/>
+    </div>
     <div class="main-content">
         <div class="contact-form">
             <p>You can contact me by completing this form and pressing submit</p>
@@ -33,12 +36,14 @@
   
 <script>
     import { defineComponent } from 'vue'
-    import ContactForm from './ContactForm.vue';
+    import ContactForm from './ContactForm.vue'
+    import MobileMenuButton from '../../Utils/MobileMenuButton.vue'
     
     export default defineComponent({
         name: 'Content',
         components: {
-            ContactForm
+            ContactForm,
+            MobileMenuButton
         }
     })
 </script>

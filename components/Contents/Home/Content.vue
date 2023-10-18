@@ -1,5 +1,6 @@
 <template>
     <div class="main-content">
+        <MobileMenuButton/>
         <div class="homepage-banner">
             <NuxtImg src="/img/rishandev-logos_black.png" alt="Homepage Banner"/>
         </div>
@@ -21,7 +22,13 @@
 </template>
 
 <script>
-    export default {
-        name: 'Content'
-    }
+    import { defineComponent } from 'vue'
+    import MobileMenuButton from '../../Utils/MobileMenuButton.vue'
+
+    export default defineComponent({
+        name: 'Content',
+        components: {
+            MobileMenuButton
+        }
+    })
 </script>

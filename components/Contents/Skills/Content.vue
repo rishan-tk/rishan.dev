@@ -1,5 +1,8 @@
 <template>
-    <div class="heading container">SKILLS</div>
+    <div class="heading">
+        <h1>SKILLS</h1>
+        <MobileMenuButton/>
+    </div>
     <div class="main-content">
 
         <div class="skills">
@@ -73,9 +76,13 @@
   
 <script>
     import { defineComponent } from 'vue'
-    
+    import MobileMenuButton from '../../Utils/MobileMenuButton.vue'
+
     export default defineComponent({
-        name: 'SkillsContent'
+        name: 'Content',
+        components: {
+            MobileMenuButton
+        }
     })
 </script>
   

@@ -1,7 +1,7 @@
 <template>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <nav class="">
-        <ul class="side-nav text-black">
+        <ul id="navbar" class="side-nav text-black">
             <li class="">
                 <div class="logo">
                     <NuxtImg src="/img/logo_black.png" alt="Logo"/>
@@ -32,20 +32,10 @@
 
 
 <script>
+import { defineComponent } from 'vue'
 
+export default defineComponent({
+    name: 'NavBar',
 
-
-export default {
-  name: 'NavBar',
-  data() {
-    return {
-      isNavbarOpen: false
-    };
-  },
-  methods: {
-    toggleNavbar() {
-      this.isNavbarOpen = !this.isNavbarOpen;
-    }
-  }
-};
+})
 </script>

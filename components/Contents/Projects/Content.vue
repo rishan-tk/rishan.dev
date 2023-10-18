@@ -1,5 +1,8 @@
 <template>
-    <div class="heading">PROJECTS</div>
+    <div class="heading">
+        <h1>PROJECTS</h1>
+        <MobileMenuButton/>
+    </div>
     <div class="main-content">
 
         Projects that I am working on:
@@ -10,11 +13,15 @@
     </div>
 </template>
   
-  <script>
-  import { defineComponent } from 'vue'
-  
-  export default defineComponent({
-    name: 'ProjectsContent'
-  })
-  </script>
+<script>
+    import { defineComponent } from 'vue'
+    import MobileMenuButton from '../../Utils/MobileMenuButton.vue'
+
+    export default defineComponent({
+        name: 'Content',
+        components: {
+            MobileMenuButton
+        }
+    })
+</script>
   

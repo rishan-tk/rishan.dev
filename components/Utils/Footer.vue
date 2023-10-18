@@ -19,7 +19,10 @@
 </template>
 
 <script>
-export default {
-  name: 'Footer'
-}
+import { defineComponent } from 'vue'
+
+export default defineComponent({
+    name: 'Footer',
+
+})
 </script>
