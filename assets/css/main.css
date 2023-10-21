@@ -40,7 +40,7 @@ nav{
     height: 100vh;
     background-color: #FFF;
     z-index: 999;
-    will-change: left;
+    transition: left 0.3s ease; /* Transition property */
 }
 
 .side-nav li{
@@ -57,8 +57,13 @@ nav{
 }
 
 .side-nav li a i {
-    width: 40px
+    width: 40px;
 }
+
+.side-nav .active-link {
+    background-color: black;
+    color:#f1f1f1;
+  }
 
 #mobile-menu-button{
     top:0;
@@ -266,9 +271,9 @@ Mobile phones Samsung+ - Ultra*/
     }
 
     .side-nav{
-        display: none;
         width: 100%;
         max-width: 100%;
+        left: -100%;
     }
 
     .side-nav ul{
@@ -337,9 +342,9 @@ Mobile phones Samsung+ - Ultra*/
     }
 
     .side-nav{
-        display: none;
         width: 100%;
         max-width: 100%;
+        left: -100%;
     }
 
     #mobile-menu-button{
@@ -396,9 +401,9 @@ Small screens, laptops */
     }
 
     .side-nav{
-        display:flex;
         width: 25%;
         max-width: 25%;
+        left: 0;
     }
 
     .side-nav > .nav-logo{

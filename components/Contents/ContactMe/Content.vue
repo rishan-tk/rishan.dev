@@ -4,6 +4,30 @@
         <MobileMenuButton/>
     </div>
     <div class="main-content">
+        <div class="contact-intro">
+            <p>Welcome to my portfolio website. Thank you for taking the time 
+                to explore my work and expertise but if you havent already feel free 
+                to visit my projects via:            
+                <NuxtLink to="/projects">
+                    <i class="fa-solid fa-rectangle-list px-2"></i>
+                    <span>Projects</span>
+                </NuxtLink> 
+                and related skills via:
+                <NuxtLink to="/skills">
+                    <i class="fa-solid fa-chart-simple px-2"></i>
+                    <span>Skills</span>
+                </NuxtLink>.
+            </p>
+            <p>I value meaningful connections and collaborations within the 
+                technology community. Whether you are interested in discussing 
+                potential projects, have inquiries about my services, or wish to 
+                explore professional opportunities, I encourage you to get in touch.
+            </p>
+                
+            <p>Your inquiries are important to me, and I'll get back to you as 
+                soon as possible (No more than a few business days depending on enquiry). Looking forward to hearing from you!
+            </p>
+        </div>
         <div class="contact-form">
             <p>You can contact me by completing this form and pressing submit</p>
             <ContactForm/>

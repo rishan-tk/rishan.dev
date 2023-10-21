@@ -16,23 +16,22 @@
                 const computedStyle = window.getComputedStyle(navbar);
 
                 // Change the display property based on the condition
-                if (computedStyle.getPropertyValue('display') === 'flex') {
-                    navbar.style.display = 'none'; 
-                } else if (computedStyle.getPropertyValue('display') === 'none'){
-                    navbar.style.display = 'flex'; 
+                if (computedStyle.getPropertyValue('left') === '0px') {
+                    console.log("True")
+                    //navbar.style.display = 'none'; 
+                    navbar.style.left= "-100%";
+                }else{
+                    navbar.style.left= '0px';
                 }
             },
             handleResize() {
                 const windowWidth = window.innerWidth;
                 const navbar = document.getElementById('navbar');
-                const computedStyle = window.getComputedStyle(navbar);
 
                 // Check if the window width is greater than a certain value (for example, 768 pixels)
                 if (windowWidth > 768) {
-                    if (computedStyle.getPropertyValue('display') === 'none'){
-                        navbar.style.display = 'flex';
-                    }
-                    
+                    //navbar.style.display = 'flex';
+                    navbar.style.left= "0";
                 }
             },
         },
