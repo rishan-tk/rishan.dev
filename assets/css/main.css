@@ -20,7 +20,6 @@ nav{
     align-items: center;
     margin: 5px;
 }
-
 .logo > img{
     width: 75%;
 }
@@ -37,12 +36,10 @@ nav{
     left: 0;
     top: 0;
     margin: 0;
-    height: 100vh;
     background-color: #FFF;
     z-index: 999;
     transition: left 0.3s ease; /* Transition property */
 }
-
 .side-nav li{
     flex: 1; /* Make each li fill the available vertical space equally */
     display: flex;
@@ -50,16 +47,16 @@ nav{
     justify-content: center;
     align-items: center;
 }
-
 .side-nav li a{
-    width: 150px;
+    width: 100%;
+    height: 100%;
     display: flex;
+    align-items: center;
+    justify-content: left;
 }
-
 .side-nav li a i {
     width: 40px;
 }
-
 .side-nav .active-link {
     background-color: black;
     color:#f1f1f1;
@@ -70,17 +67,27 @@ nav{
     left: 0;
     display: none;
     position: fixed;
-    width: 50px;
+    width: 100%;
     height: 50px;
     z-index: 1000;
+    background-color: white;
 }
-
 #mobile-menu-button button{
-    width: 100%;
+    width: 50px;
     height: 100%;
 }
 #mobile-menu-button i{
     font-size: 50px;
+}
+#mobile-menu-button span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+}
+#mobile-menu-button img{
+    height:80%;
+    padding-right: 25px;
 }
 
 footer{
@@ -88,7 +95,6 @@ footer{
     background-color: #FFF;
     box-shadow: inset 0px 0px 5px 5px #f1f1f1;
 }
-
 footer > div {
     padding-top: 50px;
 }
@@ -96,13 +102,11 @@ footer > div {
 #footer-logo, #footer-links{
     width: 50%
 }
-
 #footer-logo{
     display: flex;
     justify-content: center; /* Horizontal centering */
     align-items: center;
 }
-
 #footer-logo > img{
     width: 66%;
 }
@@ -132,7 +136,6 @@ footer > div {
     background-color: #FFF;
     box-shadow: inset 0px 0px 5px 5px #f1f1f1;
 }
-
 .main-content p{
     padding:10px;
 }
@@ -143,7 +146,6 @@ footer > div {
     justify-content: center;
     align-items: center;
 }
-
 .homepage-banner > img{
     width:100%;
 }
@@ -154,7 +156,6 @@ footer > div {
     background-color: #FFF;
     box-shadow: inset 0px 0px 5px 5px #f1f1f1;
 }
-
 .heading h1{
     height: 100%;
     width: 100%;
@@ -263,7 +264,7 @@ footer > div {
     background-color: #45a049;
 }
 
-/* Mobile Nav 
+/* Mobile Nav 1700 931
 Mobile phones Samsung+ - Ultra*/
 @media(min-width: 320px){
     html{
@@ -342,6 +343,8 @@ Mobile phones Samsung+ - Ultra*/
     }
 
     .side-nav{
+        height: calc(100vh - 50px);
+        margin-top: 50px;
         width: 100%;
         max-width: 100%;
         left: -100%;
@@ -353,6 +356,10 @@ Mobile phones Samsung+ - Ultra*/
 
     .side-nav > .nav-logo{
         display: none;
+    }
+
+    .side-nav li a{
+        justify-content: center;
     }
 
     .logo > img{
@@ -372,7 +379,8 @@ Mobile phones Samsung+ - Ultra*/
     .content{
         width: 100%;
         max-width: 100%;
-        margin-left: 0%;
+        margin-left: 0;
+        margin-top: 50px;
     }
 
     .heading{
@@ -401,13 +409,19 @@ Small screens, laptops */
     }
 
     .side-nav{
+        height: 100vh;
         width: 25%;
         max-width: 25%;
+        margin-top: 0;
         left: 0;
     }
 
     .side-nav > .nav-logo{
         display: flex;
+    }
+
+    .side-nav li a{
+        justify-content: left;
     }
 
     .logo > img{
@@ -422,6 +436,7 @@ Small screens, laptops */
         display: none;
     }
 
+
     footer{
         width: 75%;
         max-width: 75%;
@@ -432,6 +447,7 @@ Small screens, laptops */
         width: 75%;
         max-width: 75%;
         margin-left: 25%;
+        margin-top: 0;
     }
 
     .heading{
@@ -444,7 +460,7 @@ Small screens, laptops */
     }
 }
 
-/* Desktop, large screens */
+/* Desktop, large screens 720p*/
 @media(min-width: 1025px){
     html{
         font-size: 16px;
@@ -488,7 +504,7 @@ Small screens, laptops */
     }
 }
 
-/* Extra large screens, TV */
+/* Extra large screens, 1080p */
 @media(min-width: 1200px){
     html{
         font-size: 18px;

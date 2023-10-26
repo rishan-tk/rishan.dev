@@ -1,6 +1,7 @@
 <template>
     <div id="mobile-menu-button">
         <button @click="toggleNavbar"><i class="fa-solid fa-bars"></i></button>
+        <span><NuxtImg src="/img/logo_black.png" alt="Logo"/>Rishan Thirukumar</span>
     </div>
 </template>
 
