@@ -25,12 +25,21 @@
                 </label>
             </div>
             <button type="submit">Submit</button>
+            <div v-if="showPrivacyPolicyError" class="error-message">
+                Please accept the privacy policy before submitting the form.
+            </div>
+            <div v-if="showEmailError" class="error-message">
+                Error sending email. Please try again later.
+            </div>
+            <div v-if="showSuccessMessage" class="success-message">
+                Your message has been sent successfully!
+            </div>
         </form>
-        </div>
+    </div>
   </template>
   
   <script>
-    import { defineComponent, ref } from 'vue'
+    import { defineComponent, ref } from 'vue';
     
     export default defineComponent({
         name: 'ContactForm',
@@ -44,18 +53,50 @@
             });
 
             const privacyPolicyAccepted = ref(false);
+            const showEmailError = ref(false);
+            const showPrivacyPolicyError = ref(false);
+            const showSuccessMessage = ref(false);
 
             // Define a function to handle form submission
-            const submitForm = () => {
-                // Access form field values using name.value, email.value, etc.
-                // Implement your form submission logic here
+            const submitForm = async () => {
                 if (privacyPolicyAccepted.value) {
-                    // The privacy policy checkbox is checked, proceed with form submission
-                    // Implement your form submission logic here
-                    console.log("Form submitted:", formData.value);
+                    try {
+                        const response = await fetch('/api/send-email', {
+                            method: 'POST',
+                            headers: {
+                                'Content-Type': 'application/json',
+                            },
+                            body: JSON.stringify({
+                                name: formData.value.name,
+                                email: formData.value.email,
+                                subject: formData.value.subject,
+                                message: formData.value.message,
+                            }),
+                        });
+
+                        if (response.ok) {
+                            const data = await response.json();
+                            console.log('Email sent successfully:', data.message);
+                            // Handle success (e.g., show a success message to the user)
+                            showSuccessMessage.value = true;
+                            // Reset the form and other states
+                            formData.value = { name: '', email: '', subject: '', message: '' };
+                            privacyPolicyAccepted.value = false;
+                            showPrivacyPolicyError.value = false;
+                            showEmailError.value = false;
+                        } else {
+                            console.error('Error sending email:', response.statusText);
+                            // Handle error (e.g., show an error message to the user)
+                            showEmailError.value = true;
+                        }
+                    }catch (error) {
+                        console.error('Error sending email:', error);
+                        // Handle network error (e.g., show an error message to the user)
+                        showEmailError.value = true;
+                    }
                 } else {
                     // The privacy policy checkbox is not checked, show an error message
-                    console.log('Privacy policy not accepted');
+                    showPrivacyPolicyError.value = true;
                 }
             };
 
@@ -63,6 +104,9 @@
             return {
                 formData,
                 privacyPolicyAccepted,
+                showEmailError,
+                showPrivacyPolicyError,
+                showSuccessMessage,
                 submitForm
             };
         },

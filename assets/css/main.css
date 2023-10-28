@@ -163,6 +163,31 @@ footer > div {
     align-items: center;
 }
 
+/* Projects Page*/
+.page-intro{
+    font-size: larger;
+    padding:25px;
+}
+
+.projects>p{
+    padding-left: 25px;
+}
+.projects ul{
+    padding-left: 25px;
+}
+.projects li{
+    font-weight: bold;
+}
+.projects li p{
+    font-weight: normal;
+    font-style: italic;
+}
+.projects h1, .projects h2,.projects h3,.projects h4{
+    font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
 /* Skills Page */
 .skills .caption{
     height: 20%;
@@ -264,6 +289,16 @@ footer > div {
     background-color: #45a049;
 }
 
+.error-message {
+    color: red;
+    margin-top: 10px;
+}
+
+.success-message {
+    color: #45a049;
+    margin-top: 10px;
+}
+
 /* Mobile Nav 1700 931
 Mobile phones Samsung+ - Ultra*/
 @media(min-width: 320px){
@@ -325,6 +360,23 @@ Mobile phones Samsung+ - Ultra*/
     .heading h1{
         justify-content: center;
         font-size: 2.5rem;
+    }
+
+    .projects h1{
+        font-size: 2.25rem;
+        margin-top:50px;
+    }
+    .projects h2{
+        font-size: 1.75rem;
+        padding-left: 10px;
+    }
+    .projects h3{
+        font-size: 1.25rem;
+        padding-left: 15px;
+    }
+    .projects h4{
+        font-size: 1.1rem;
+        padding-left: 20px;
     }
 }
 
@@ -551,22 +603,17 @@ Small screens, laptops */
         font-size: 2.75rem;
     }
 
-    .main-content h1, .main-content h2,.main-content h3,.main-content h4{
-        font-weight: bold;
-        padding-top: 10px;
-        padding-bottom: 10px;
-    }
-    .main-content h1{
-        font-size: 2.5rem;
+    .projects h1{
+        font-size: 2.25rem;
         margin-top:50px;
     }
-    .main-content h2{
+    .projects h2{
         font-size: 1.75rem;
     }
-    .main-content h3{
+    .projects h3{
         font-size: 1.25rem;
     }
-    .main-content h4{
+    .projects h4{
         font-size: 1.1rem;
         padding-left: 10px;
     }
