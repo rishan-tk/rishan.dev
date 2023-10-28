@@ -149,17 +149,22 @@
             </p>
             <h3>Technologies Used</h3>
             <h4>Programming Language/s:</h4>
-            <p>Python was the natural choice for this project due to its simplicity,
-                readability, and a vast array of libraries and frameworks specifically
-                tailored for web applications and automation tasks. Its ease of use
-                and straightforward syntax allowed for swift development and quick 
-                prototyping. Python's extensive community support, rich documentation,
-                and active developer ecosystem meant that troubleshooting and finding
-                solutions to challenges were readily accessible. Moreover, Python's 
-                asynchronous capabilities, crucial for handling concurrent tasks 
-                like managing multiple server requests and streaming music seamlessly,
-                made it an ideal language for this Discord Music Bot project.
-            </p>
+            <ul>
+                <li>
+                    Python:
+                    <p>Python was the natural choice for this project due to its simplicity,
+                        readability, and a vast array of libraries and frameworks specifically
+                        tailored for web applications and automation tasks. Its ease of use
+                        and straightforward syntax allowed for swift development and quick 
+                        prototyping. Python's extensive community support, rich documentation,
+                        and active developer ecosystem meant that troubleshooting and finding
+                        solutions to challenges were readily accessible. Moreover, Python's 
+                        asynchronous capabilities, crucial for handling concurrent tasks 
+                        like managing multiple server requests and streaming music seamlessly,
+                        made it an ideal language for this Discord Music Bot project.
+                    </p>
+                </li>
+            </ul>
             <h4>Frameworks/Libraries:</h4>
             <ul>
                 <li>
