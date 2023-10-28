@@ -4,6 +4,7 @@
         <div class="homepage-banner">
             <NuxtImg src="/img/rishandev-logos_black.png" alt="Homepage Banner"/>
         </div>
+        <!--
         <p>Purpose for this website</p>
         <p>Brief summary about skills and passions</p>
 
@@ -18,6 +19,7 @@
             
         <p>I will soon be starting my own blog about technologies I am currently interested in and researching.</p>
         <NuxtLink to="/blog"><i class="fa-solid fa-rectangle-list"></i><span>Blog</span></NuxtLink> 
+        -->
     </div>
 </template>
 
