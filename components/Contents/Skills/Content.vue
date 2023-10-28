@@ -9,22 +9,28 @@
             <p class="caption">Languages:</p>
             <ul>
                 <li>
-                    <div class="logo-img">
-                        <NuxtImg src="/img/skills/cpp-logo.png" alt="C Plus Plus Logo"/>
-                    </div>
-                    <p>C++</p>
+                    <NuxtLink to="/projects#projects-4">
+                        <div class="logo-img">
+                            <NuxtImg src="/img/skills/cpp-logo.png" alt="C Plus Plus Logo"/>
+                        </div>
+                        <p>C++</p>
+                    </NuxtLink>
                 </li>
                 <li>
-                    <div class="logo-img">
-                        <NuxtImg src="/img/skills/python-logo.png" alt="Python Logo"/>
-                    </div>
-                    <p>Python</p>
+                    <NuxtLink to="/projects#projects-2">
+                        <div class="logo-img">
+                            <NuxtImg src="https://www.svgrepo.com/show/376344/python.svg" alt="Python Logo"/>
+                        </div>
+                        <p>Python</p>
+                    </NuxtLink>
                 </li>
                 <li>
-                    <div class="logo-img">
-                        <NuxtImg src="/img/skills/html5-logo.png" alt="HTML 5 Logo"/>
-                    </div>
-                    <p>HTML5</p>
+                    <NuxtLink to="/projects#projects-1">
+                        <div class="logo-img">
+                            <NuxtImg src="/img/skills/html5-logo.png" alt="HTML 5 Logo"/>
+                        </div>
+                        <p>HTML5</p>
+                    </NuxtLink>
                 </li>
             </ul>
         </div>
@@ -33,16 +39,20 @@
             <p class="caption">Frameworks & Libraries:</p>
             <ul>
                 <li>
-                    <div class="logo-img">
-                        <NuxtImg src="/img/skills/vscode-logo.png" alt="Visual Studio Code Logo"/>
-                    </div>
-                    <p>DiscordBot.py</p>
+                    <NuxtLink to="/projects#projects-2">
+                        <div class="logo-img">
+                            <NuxtImg src="https://discordpy.readthedocs.io/en/stable/_images/snake_dark.svg" alt="Visual Studio Code Logo"/>
+                        </div>
+                        <p>DiscordBot.py</p>
+                    </NuxtLink>
                 </li>  
                 <li>
-                    <div class="logo-img">
-                        <NuxtImg src="/img/skills/vscode-logo.png" alt="Visual Studio Code Logo"/>
-                    </div>
-                    <p>TelegramBot</p>
+                    <NuxtLink to="/projects#projects-3">
+                        <div class="logo-img">
+                            <NuxtImg src="https://miro.medium.com/v2/resize:fit:1400/1*lpV49uSTaxnGNRCY99wXkQ.png" alt="Visual Studio Code Logo"/>
+                        </div>
+                        <p>TelegramBot</p>
+                    </NuxtLink>
                 </li>           
             </ul>
         </div>

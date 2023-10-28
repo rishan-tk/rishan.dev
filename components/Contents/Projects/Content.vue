@@ -4,7 +4,7 @@
         <MobileMenuButton/>
     </div>
     <div class="main-content">
-        <div class="page-intro">
+        <div class="page-intro" id="projects-intro">
             <p>Below I will be briefly talking about some of the projects 
                 I have worked on during my time. If you would 
                 like to read more there will be a link to a seperate page 
@@ -12,7 +12,7 @@
             </p>
         </div>
 
-        <div class="projects">
+        <div class="projects" id="projects-1">
             <h1>Personal Website</h1>
             <h2>Overview</h2>
             <h3>Project Aims:</h3>
@@ -101,7 +101,7 @@
             </NuxtLink>
         </div>
 
-        <div class="projects">
+        <div class="projects" id="projects-2">
             <h1>Discord Music Bot</h1>
             <h2>Overview</h2>
             <h3>Project Aims:</h3>
@@ -221,7 +221,7 @@
             </NuxtLink>
         </div>
 
-        <div class="projects">
+        <div class="projects" id="projects-3">
             <h1>Telegram Shop Bot</h1>
             <h2>Overview</h2>
             <p>Aim of Project</p>
@@ -238,7 +238,7 @@
             <p>read more here</p>
         </div>
 
-        <div class="projects">
+        <div class="projects" id="projects-4">
             <h1>Movie Database</h1>
             <h2>Overview</h2>
             <p>Aim of Project</p>
@@ -255,7 +255,7 @@
             <p>read more here</p>
         </div>
 
-        <div class="projects">
+        <div class="projects" id="projects-5">
             <h1>2D Platformer - Graphics 1 Project</h1>
             <h2>Overview</h2>
             <p>Aim of Project</p>
