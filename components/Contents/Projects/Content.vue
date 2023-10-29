@@ -258,18 +258,81 @@
         <div class="projects" id="projects-5">
             <h1>2D Platformer - Graphics 1 Project</h1>
             <h2>Overview</h2>
-            <p>Aim of Project</p>
-            <p>Key features</p>
-            <p>Demographic</p>
-
+            <h3>Project Aims:</h3>
+            <p>The primary aim of the 2D Platformer Graphics 1 Project was to build a fully functional 
+                2D platformer level. Key objectives included mastering the use of OpenGL for graphical
+                representations and implementing core gameplay mechanics typically found in platformer 
+                games. The project was also an opportunity to explore and apply fundamental concepts of 
+                graphics programming within a practical scenario.</p>
+            <h3>Project Features:</h3>
+            <ul>
+                <li>
+                    Level Design:
+                    <p>A carefully crafted level that showcases various elements typical of platformer games,
+                        including obstacles, platforms, and interactive elements.</p>
+                </li>
+                <li>
+                    Graphics Rendering:
+                    <p>Utilization of OpenGL for rendering 2D graphics, demonstrating the capability 
+                        to handle graphical elements within the gaming environment.</p>
+                </li>
+                <li>
+                    Game Mechanics:
+                    <p>Implementation of basic mechanics such as jumping, moving, and 
+                        collision detection, essential for the platformer genre.</p>
+                </li>
+            </ul>
+            <h3>Demographic</h3>
+            <p>This project was primarily aimed at fulfilling academic requirements and 
+                demonstrating skills in graphics programming. It is of interest to educators,
+                fellow students, and anyone with a passion for game development and graphics programming.</p>
             <h3>Technologies Used</h3>
-            <p>Languages</p>
+            <h4>Programming Language/s</h4>
+            <ul>
+                <li>
+                    C++:
+                    <p>The primary programming language used for developing the game logic and 
+                        interfacing with OpenGL for graphics rendering.</p>
+                </li>
+            </ul>
             <h4>Frameworks/Libraries</h4>
+            <ul>
+                <li>
+                    OpenGL:
+                    <p>A cross-language, cross-platform application programming interface (API) 
+                        for rendering 2D and 3D vector graphics, used to create all the graphical 
+                        elements in the game.</p>
+                </li>
+                <li>
+                    PicoPNG:
+                    <p>Integrated into the project to decode PNG files, PicoPNG is used for 
+                        handling and processing image files, making it possible to incorporate 
+                        detailed graphics and textures in the game.</p>
+                </li>
+            </ul>
             <h4>Tools</h4>
-
-            <h3>Link to repo</h3>
-
-            <p>read more here</p>
+            <ul>
+                <li>
+                    Visual Studio 2017:
+                    <p>The integrated development environment (IDE) used for writing, 
+                        compiling, and debugging the code. It provided a robust platform 
+                        for C++ development and OpenGL integration.</p>
+                </li>
+                <li>
+                    GitHub:
+                    <p>Used for version control, enabling efficient management and sharing
+                        of the project's source code. Linked to cloudflare to enable automatic 
+                        deployment upon new push requests</p>
+                </li>
+            </ul>
+            <h3>Link to repository:</h3>
+            <p>For more details and insights into the 2D Platformer project, feel free to explore the GitHub 
+                repository: 
+            </p>
+            <NuxtLink to="https://github.com/rishan-tk/UnchartedTerritory">
+                <i class="fab fa-github"></i>
+                Respository Link
+            </NuxtLink>
         </div>
     </div>
 </template>
