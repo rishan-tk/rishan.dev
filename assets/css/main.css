@@ -310,7 +310,7 @@ footer > div {
 
 /* Mobile Nav 1700 931
 Mobile phones Samsung+ - Ultra*/
-@media(min-width: 320px){
+@media(min-width: 250px){
     html{
         font-size: 14px;
     }
@@ -372,12 +372,12 @@ Mobile phones Samsung+ - Ultra*/
     }
 
     .projects h1{
-        font-size: 2.25rem;
+        font-size: 1.75rem;
         margin-top:10px;
         padding-left: 10px;
     }
     .projects h2{
-        font-size: 1.75rem;
+        font-size: 1.5rem;
         padding-left: 15px;
     }
     .projects h3{
@@ -402,7 +402,7 @@ Mobile phones Samsung+ - Ultra*/
     .projects-heading{
         margin-top:10px;
         padding-left: 10px;
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 }
 
