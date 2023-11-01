@@ -6,7 +6,7 @@
     <div class="main-content">
 
         <div class="skills">
-            <p class="caption">Languages:</p>
+            <h1>Languages:</h1>
             <ul>
                 <li>
                     <NuxtLink to="/projects#projects-4">
@@ -36,7 +36,7 @@
         </div>
 
         <div class="skills">
-            <p class="caption">Frameworks & Libraries:</p>
+            <h1>Frameworks & Libraries:</h1>
             <ul>
                 <li>
                     <NuxtLink to="/projects#projects-2">
@@ -58,7 +58,7 @@
         </div>
 
         <div class="skills">
-            <p class="caption">Tools:</p>
+            <h1>Tools:</h1>
             <ul>
                 <li>
                     <div class="logo-img">

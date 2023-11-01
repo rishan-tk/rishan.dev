@@ -191,37 +191,44 @@ footer > div {
 
 /* Skills Page */
 .skills{
-    margin-bottom: 50px;;
-}
-.skills .caption{
-    height: 20%;
-}
-
-.skills, .tools{
     width:100%;
     max-width: 100%;
-    height: 250px;
-}
-
-.skills ul, .tools ul{
     display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.skills h1{
+    font-weight: bold;
+    font-size: 1.75rem;
+    padding: 25px;
+    text-align: center;
+}
+.skills ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
     max-height:80%;
     width: 100%;
-    padding: 0 10px 0 10px
+    padding: 50px;
 }
-
-.skills li, .tools li{
+.skills li{
     display: flex;
     justify-content: center; /* Horizontal centering */
     align-items: center;
     flex-direction: column;
     text-align: center;
     width: 100%;
-    padding: 0 10px 0 10px
+    padding: 25px;
+    flex-basis: calc(100% / 3);
 }
-
 .skills li a{
     height: 100%;
+}
+.skills ul p{
+    height: 20%;
+    font-size: 1.25rem;
+    font-weight: bold;
 }
 
 .logo-img{
@@ -233,10 +240,6 @@ footer > div {
     max-height: 100%; 
     width: auto; 
     height: auto;
-}
-
-.skills ul p, .tools ul p{
-    height: 20%;
 }
 
 /* Contact Me Page */
@@ -381,6 +384,23 @@ Mobile phones Samsung+ - Ultra*/
         font-size: 2.5rem;
     }
 
+    /* Skills Page*/
+    .skills h1{
+        font-size: 1.75rem;
+        padding: 15px;
+    }
+    .skills ul{
+        padding: 15px;
+    }
+    .skills li{
+        padding: 10px;
+        flex-basis: 100%;
+    }
+    .skills ul p{
+        font-size: 1.25rem;
+    }
+
+    /* PROJECTS PAGE */
     .projects h1{
         font-size: 1.75rem;
         margin-top:10px;
@@ -451,6 +471,22 @@ Mobile phones Samsung+ - Ultra*/
 
     .heading h1{
         font-size: 2.5rem;
+    }
+
+    /* Skills Page*/
+    .skills h1{
+        font-size: 1.75rem;
+        padding: 15px;
+    }
+    .skills ul{
+        padding: 15px;
+    }
+    .skills li{
+        padding: 10px;
+        flex-basis: 50%;
+    }
+    .skills ul p{
+        font-size: 1.25rem;
     }
 
     .projects h1{
@@ -570,6 +606,22 @@ Small screens, laptops */
         font-size: 2.75rem;
     }
 
+    /* Skills Page*/
+    .skills h1{
+        font-size: 1.75rem;
+        padding: 20px;
+    }
+    .skills ul{
+        padding: 20px;
+    }
+    .skills li{
+        padding: 15px;
+        flex-basis: 33.33%;
+    }
+    .skills ul p{
+        font-size: 1.25rem;
+    }
+
     .projects h1{
         font-size: 2rem;
         margin-top:20px;
@@ -661,6 +713,21 @@ Small screens, laptops */
 
     .heading h1{
         font-size: 3rem;
+    }
+
+    /* Skills Page*/
+    .skills h1{
+        font-size: 1.75rem;
+        padding: 25px;
+    }
+    .skills ul{
+        padding: 25px;
+    }
+    .skills li{
+        padding: 20px;
+    }
+    .skills ul p{
+        font-size: 1.25rem;
     }
 
     /* Projects Page */
