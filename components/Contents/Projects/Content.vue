@@ -12,6 +12,10 @@
             </p>
         </div>
 
+        <div class="projects-heading">
+            <h1>Personal Projects</h1>
+        </div>
+
         <div class="projects" id="projects-1">
             <h1>Personal Website</h1>
             <h2>Overview</h2>
@@ -238,6 +242,10 @@
             <p>read more here</p>
         </div>
 
+        <div class="projects-heading">
+            <h1>Academic Projects</h1>
+        </div>
+
         <div class="projects" id="projects-4">
             <h1>Movie Database</h1>
             <h2>Overview</h2>
@@ -330,6 +338,79 @@
                 repository: 
             </p>
             <NuxtLink to="https://github.com/rishan-tk/UnchartedTerritory">
+                <i class="fab fa-github"></i>
+                Respository Link
+            </NuxtLink>
+        </div>
+
+        <div class="projects-heading">
+            <h1>Work-In-Progress Projects</h1>
+        </div>
+
+        <div class="projects" id="project-6">
+            <h1>Landlord Management System</h1>
+            <h2>Overview</h2>
+            <h3>Project Aims:</h3>
+            <p>The primary aim of this project is to create an application to help manage the business for landlords, 
+                whether it's a single person or a company.</p>
+            <h3>Project Features:</h3>
+            <ul>
+                <li>
+                    All in one place to view organised documents
+                    <p>All documents related to the business can be scanned or added to the software to keep track</p>
+                </li>
+                <li>
+                    OCR Document Scanner:
+                    <p>To help automatically scan and organise documents relating to the business while importing 
+                        the data into the software to also be saved. </p>
+                </li>
+                <li>
+                    Visualise expenses:
+                    <p>Options of graphs will be available to visualise the expenses of the business, 
+                        such as an overview of gas costs over the year for the individual property</p>
+                </li>
+            </ul>
+            <h3>Demographic</h3>
+            <p>This project was primarily aimed at small-scale landlords who need to incorporate technology 
+                into their business to keep up with the times.</p>
+            <h3>Technologies Used</h3>
+            <h4>Programming Language/s</h4>
+            <ul>
+                <li>
+                    C++:
+                    <p>The primary programming language used for developing the logic and 
+                        models of the software.</p>
+                </li>
+            </ul>
+            <h4>Frameworks/Libraries</h4>
+            <ul>
+                <li>
+                    Qt:
+                    <p>A cross-language, cross-platform application programming interface (API) 
+                        for rendering 2D and 3D vector graphics, used to create all the graphical 
+                        elements in the game.</p>
+                </li>
+            </ul>
+            <h4>Tools</h4>
+            <ul>
+                <li>
+                    Visual Studio 2022:
+                    <p>The integrated development environment (IDE) used for writing, 
+                        compiling, and debugging the code. It provided a robust platform 
+                        for C++ development and OpenGL integration.</p>
+                </li>
+                <li>
+                    GitHub:
+                    <p>Used for version control, enabling efficient management and sharing
+                        of the project's source code. Linked to cloudflare to enable automatic 
+                        deployment upon new push requests</p>
+                </li>
+            </ul>
+            <h3>Link to repository:</h3>
+            <p>For more details and insights into the Landlord Managment System, feel free to explore the GitHub 
+                repository: 
+            </p>
+            <NuxtLink to="https://github.com/rishan-tk/LandlordManagementSystem">
                 <i class="fab fa-github"></i>
                 Respository Link
             </NuxtLink>
