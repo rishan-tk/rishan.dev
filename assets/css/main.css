@@ -307,6 +307,10 @@ footer > div {
     margin-top: 10px;
 }
 
+.about-me h1{
+    font-weight: bold;
+}
+
 /* Mobile Nav 1700 931
 Mobile phones Samsung+ - Ultra*/
 @media(min-width: 310px){
@@ -410,6 +414,21 @@ Mobile phones Samsung+ - Ultra*/
         padding-left: 2px;
         font-size: 2rem;
     }
+
+    .about-me h1{
+        padding:10px;
+        font-size: 1.5rem;
+    }
+    .about-me h2{
+        padding:5px 15px 5px 15px;
+        font-size: 1.25rem;
+    }
+    .about-me p{
+        padding: 0 20px 10px 20px;
+    }
+    .about-me a{
+        padding-left: 10px
+    }
 }
 
 /* iPads, tablets */
@@ -463,6 +482,21 @@ Mobile phones Samsung+ - Ultra*/
     }
     .projects-heading{
         margin-top:15px;
+    }
+
+    .about-me h1{
+        padding:15px;
+        font-size: 1.75rem;
+    }
+    .about-me h2{
+        padding:5px 20px 5px 20px;
+        font-size: 1.5rem;
+    }
+    .about-me p{
+        padding: 0 25px 10px 25px;
+    }
+    .about-me a{
+        padding-left: 10px
     }
 }
 
@@ -569,6 +603,21 @@ Small screens, laptops */
         margin-top:20px;
         font-size: 2.25rem;
     }
+
+    .about-me h1{
+        padding:20px;
+        font-size: 1.75rem;
+    }
+    .about-me h2{
+        padding:10px 25px 10px 25px;
+        font-size: 1.5rem;
+    }
+    .about-me p{
+        padding: 0 30px 15px 30px;
+    }
+    .about-me a{
+        padding-left: 15px
+    }
 }
 
 /* Desktop, large screens 720p*/
@@ -641,6 +690,21 @@ Small screens, laptops */
     }
     .projects a{
         padding-left: 100px;
+    }
+
+    .about-me h1{
+        padding:20px;
+        font-size: 1.75rem;
+    }
+    .about-me h2{
+        padding:10px 30px 10px 30px;
+        font-size: 1.5rem;
+    }
+    .about-me p{
+        padding: 0 40px 20px 40px;
+    }
+    .about-me a{
+        padding-left: 20px
     }
 }
 
@@ -717,5 +781,20 @@ Small screens, laptops */
     }
     .projects a{
         padding-left: 140px;
+    }
+
+    .about-me h1{
+        padding:25px;
+        font-size: 1.75rem;
+    }
+    .about-me h2{
+        padding:15px 35px 15px 35px;
+        font-size: 1.5rem;
+    }
+    .about-me p{
+        padding: 0 50px 25px 50px;
+    }
+    .about-me a{
+        padding-left: 25px
     }
 }
