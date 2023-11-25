@@ -23,9 +23,8 @@ nav{
 .logo > img{
     width: 75%;
 }
-
 .logo-caption{
-    font-size: 1.5rem;
+    font-weight: 600;
 }
 
 .side-nav {
@@ -189,6 +188,57 @@ footer > div {
     font-weight: bold;
 }
 
+#tableOfContents {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+#tableOfContents ul {
+    padding-left: 0;
+    list-style-type: none;
+}
+#tableOfContents li {
+    margin-bottom: 5px;
+}
+#tableOfContents ul ul { /* First level of nesting */
+    padding-left: 20px;
+}
+#tableOfContents ul ul ul { /* Second level of nesting */
+    padding-left: 40px;
+}
+
+.expandable {
+    background-color: #f9f9f9;
+    cursor: pointer;
+    padding: 5px;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+}
+
+.expandable:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.expandable.active:after {
+    content: "\2212";
+}
+
+.nested {
+    display: none;
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+.active {
+    display: block;
+}
+
 /* Skills Page */
 .skills{
     width:100%;
@@ -327,6 +377,7 @@ Mobile phones Samsung+ - Ultra*/
         height: calc(100vh - 50px);
         margin-top: 50px;
         left: -100%;
+        font-size: 1.5rem;
     }
     .side-nav ul{
         padding:10px;
@@ -344,14 +395,12 @@ Mobile phones Samsung+ - Ultra*/
 
     #mobile-menu-button{
         display: flex;
+        font-size: 1.25rem;
+        font-weight: 600;
     }
 
     .logo > img{
         width: 50%;
-    }
-
-    .logo-caption{
-        font-size: 1.75rem;
     }
 
     footer{
@@ -465,6 +514,13 @@ Mobile phones Samsung+ - Ultra*/
         padding: 4px;
     }
 
+    .side-nav{
+        font-size: 1.75rem;;
+    }
+    #mobile-menu-button{
+        font-size: 2rem;;
+    }
+
     .heading{
         height: 110px;
     }
@@ -541,7 +597,7 @@ Mobile phones Samsung+ - Ultra*/
 Small screens, laptops */
 @media(min-width: 769px){
     html{
-        font-size: 16px;
+        font-size: 18px;
     }
 
     nav ul>li{
@@ -558,6 +614,7 @@ Small screens, laptops */
         max-width: 25%;
         margin-top: 0;
         left: 0;
+        font-size: 1.25rem;
     }
 
     .side-nav > .nav-logo{
@@ -570,10 +627,6 @@ Small screens, laptops */
 
     .logo > img{
         width: 60%;
-    }
-
-    .logo-caption{
-        font-size: 1.75rem;
     }
 
     #mobile-menu-button{
@@ -689,14 +742,11 @@ Small screens, laptops */
     .side-nav{
         width: 20%;
         max-width: 20%;
+        font-size: 1.5rem;
     }
 
     .logo > img{
         width: 75%;
-    }
-
-    .logo-caption{
-        font-size: 1.5rem;
     }
 
     footer{
@@ -792,14 +842,11 @@ Small screens, laptops */
     .side-nav{
         width: 15%;
         max-width: 15%;
+        font-size: 1.40rem;
     }
 
     .logo > img{
         width: 75%;
-    }
-
-    .logo-caption{
-        font-size: 1.25rem;
     }
 
     footer{
