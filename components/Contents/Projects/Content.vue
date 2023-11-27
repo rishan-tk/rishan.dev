@@ -4,6 +4,29 @@
         <MobileMenuButton/>
     </div>
     <div class="main-content">
+        <div id="tableOfContents">
+            <h2>Contents:</h2>
+            <ul>
+                <li v-for="(mainItem, mainIndex) in items" :key="mainIndex">
+                    <button @click="toggleExpand(mainItem)">{{ mainItem.title }}</button>
+                    <ul v-if="mainItem.isOpen">
+                        <li v-for="(subItem, subIndex) in mainItem.subItems" :key="subIndex">
+                            <button @click="toggleExpand(subItem)">{{ subItem.title }}</button>
+                            <ul v-if="subItem.isOpen">
+                                <li v-for="(project, projectIndex) in subItem.subItems" :key="projectIndex">
+                                    <button @click="toggleExpand(project)">{{ project.title }}</button>
+                                    <ul v-if="project.isOpen">
+                                        <li v-for="(link, linkIndex) in project.links" :key="linkIndex">
+                                            <a :href="link.href">{{ link.name }}</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
         <div class="page-intro" id="projects-intro">
             <p>Below I will be briefly talking about some of the projects 
                 I have worked on during my time. If you would 
@@ -17,15 +40,15 @@
         </div>
 
         <div class="projects" id="projects-1">
-            <h1>Personal Website</h1>
+            <h1>1. Personal Website</h1>
             <h2>Overview</h2>
-            <h3>Project Aims:</h3>
+            <h3 id="1-aims">1.1 Project Aims:</h3>
             <p>The primary aim of this project is to develop a personal portfolio website
                 that showcases my skills and projects in the field of technology. The 
                 website is intended to be a dynamic platform where I can share technical
                 blogs, aiming to benefit my peers in the industry. Another key goal is
                 to ensure the website evolves over time, mirroring my professional growth.</p>
-            <h3>Project Features:</h3>
+            <h3 id="1-features">1.2 Project Features:</h3>
             <ul>
                 <li>
                     Skills Page:
@@ -47,13 +70,13 @@
                         topics, aimed at benefiting peers in the industry.</p>
                 </li>
             </ul>
-            <h3>Demographic</h3>
+            <h3 id="1-demographic">1.3 Demographic</h3>
             <p>The website is primarily targeted towards recruiters, fellow IT professionals, 
                 and anyone interested in collaboration or learning more about my professional 
                 expertise. It's designed to cater to individuals seeking in-depth knowledge 
                 of my skills, projects, and professional journey.</p>
-            <h3>Technologies Used</h3>
-            <h4>Programming Language/s</h4>
+            <h3 id="1-tech">1.4 Technologies Used</h3>
+            <h4>1.4.1 Programming Language/s</h4>
             <ul>
                 <li>
                     HTML, CSS, and JavaScript:
@@ -61,7 +84,7 @@
                         and interactivity respectively.</p>
                 </li>
             </ul>
-            <h4>Frameworks/Libraries</h4>
+            <h4>1.4.2 Frameworks/Libraries</h4>
             <ul>
                 <li>
                     NuxtJS 3:
@@ -70,7 +93,7 @@
                         modern web application.</p>
                 </li>
             </ul>
-            <h4>Tools</h4>
+            <h4>1.4.3 Tools</h4>
             <ul>
                 <li>
                     Visual Studio Code:
@@ -95,7 +118,7 @@
                         measures like DDoS mitigation.</p>
                 </li>
             </ul>
-            <h3>Link to repository:</h3>
+            <h3 id="1-repo">1.5 Link to repository:</h3>
             <p>For more details and insights into the rishan.dev project, feel free to explore the GitHub 
                 repository: 
             </p>
@@ -106,9 +129,9 @@
         </div>
 
         <div class="projects" id="projects-2">
-            <h1>Discord Music Bot</h1>
+            <h1>2. Discord Music Bot</h1>
             <h2>Overview</h2>
-            <h3>Project Aims:</h3>
+            <h3 id="2-aims">2.1 Project Aims:</h3>
             <p>The primary goal of this project is to develop a customized Discord Music
                 Bot for personal use. Its core purpose is to improve the music streaming
                 experience within a Discord server. The aim is to provide users and their
@@ -116,7 +139,7 @@
                 elevating the usual interactions on the platform.
             </p>
 
-            <h3>Project Features:</h3>
+            <h3 id="2-features">2.2 Project Features:</h3>
             <ul>
                 <li>
                     Search and Play:
@@ -143,7 +166,7 @@
                     </p>
                 </li>
             </ul>
-            <h3>Demographic:</h3>
+            <h3 id="2-demographic">2.3 Demographic:</h3>
             <p>The Discord Music Bot is primarily designed for individuals or groups who 
                 frequently use Discord for social interactions and seek a more enhanced and
                 user-friendly music experience. It caters to users who enjoy sharing and 
@@ -151,8 +174,8 @@
                 groups, or any Discord server members looking to add a musical element to 
                 their digital gatherings.
             </p>
-            <h3>Technologies Used</h3>
-            <h4>Programming Language/s:</h4>
+            <h3 id="2-tech">2.4 Technologies Used</h3>
+            <h4>2.4.1 Programming Language/s:</h4>
             <ul>
                 <li>
                     Python:
@@ -169,7 +192,7 @@
                     </p>
                 </li>
             </ul>
-            <h4>Frameworks/Libraries:</h4>
+            <h4>2.4.2 Frameworks/Libraries:</h4>
             <ul>
                 <li>
                     Discord.py:
@@ -198,7 +221,7 @@
                 </p>
                 </li>
             </ul>
-            <h4>Tools</h4>
+            <h4>2.4.3 Tools</h4>
             <ul>
                 <li>
                     Visual Studio Code:
@@ -215,7 +238,7 @@
                 </li>
             </ul>
 
-            <h3>Link to repository:</h3>
+            <h3 id="2-repo">2.5 Link to repository:</h3>
             <p>For more details and insights into the Discord Music Bot project, feel free to explore the GitHub 
                 repository: 
             </p>
@@ -226,18 +249,18 @@
         </div>
 
         <div class="projects" id="projects-3">
-            <h1>Telegram Shop Bot</h1>
+            <h1>3. Telegram E-Commerce Shop Bot</h1>
             <h2>Overview</h2>
-            <p>Aim of Project</p>
-            <p>Key features</p>
-            <p>Demographic</p>
+            <h3 id="3-aims">3.1 Aim of Project</h3>
+            <h3 id="3-features">3.2 Key features</h3>
+            <h3 id="3-demographic">3.3 Demographic</h3>
 
-            <h3>Technologies Used</h3>
-            <p>Languages</p>
-            <h4>Frameworks/Libraries</h4>
-            <h4>Tools</h4>
+            <h3 id="3-tech">3.4 Technologies Used</h3>
+            <h4>3.4.1 Languages</h4>
+            <h4>3.4.2 Frameworks/Libraries</h4>
+            <h4>3.4.3 Tools</h4>
 
-            <h3>Link to repo</h3>
+            <h3 id="3-repo">3.5 Link to repo</h3>
 
             <p>read more here</p>
         </div>
@@ -247,32 +270,32 @@
         </div>
 
         <div class="projects" id="projects-4">
-            <h1>Movie Database</h1>
+            <h1>4. Movie Database</h1>
             <h2>Overview</h2>
-            <p>Aim of Project</p>
-            <p>Key features</p>
-            <p>Demographic</p>
+            <h3 id="4-aims">4.1 Aim of Project</h3>
+            <h3 id="4-features">4.2 Key features</h3>
+            <h3 id="4-demographic">4.3 Demographic</h3>
 
-            <h3>Technologies Used</h3>
-            <p>Languages</p>
-            <h4>Frameworks/Libraries</h4>
-            <h4>Tools</h4>
+            <h3 id="5-tech">4.4 Technologies Used</h3>
+            <h4>4.4.1 Languages</h4>
+            <h4>4.4.2 Frameworks/Libraries</h4>
+            <h4>4.4.3 Tools</h4>
 
-            <h3>Link to repo</h3>
+            <h3 id="4-repo">4.5 Link to repo</h3>
 
             <p>read more here</p>
         </div>
 
         <div class="projects" id="projects-5">
-            <h1>2D Platformer - Graphics 1 Project</h1>
+            <h1>5. 2D Platformer - Graphics 1 Project</h1>
             <h2>Overview</h2>
-            <h3>Project Aims:</h3>
+            <h3 id="5-aims">5.1 Project Aims:</h3>
             <p>The primary aim of the 2D Platformer Graphics 1 Project was to build a fully functional 
                 2D platformer level. Key objectives included mastering the use of OpenGL for graphical
                 representations and implementing core gameplay mechanics typically found in platformer 
                 games. The project was also an opportunity to explore and apply fundamental concepts of 
                 graphics programming within a practical scenario.</p>
-            <h3>Project Features:</h3>
+            <h3 id="5-features">5.2 Project Features:</h3>
             <ul>
                 <li>
                     Level Design:
@@ -290,12 +313,12 @@
                         collision detection, essential for the platformer genre.</p>
                 </li>
             </ul>
-            <h3>Demographic</h3>
+            <h3 id="5-demographic">5.3 Demographic</h3>
             <p>This project was primarily aimed at fulfilling academic requirements and 
                 demonstrating skills in graphics programming. It is of interest to educators,
                 fellow students, and anyone with a passion for game development and graphics programming.</p>
-            <h3>Technologies Used</h3>
-            <h4>Programming Language/s</h4>
+            <h3 id="5-tech">5.4 Technologies Used</h3>
+            <h4>5.4.1 Programming Language/s</h4>
             <ul>
                 <li>
                     C++:
@@ -303,7 +326,7 @@
                         interfacing with OpenGL for graphics rendering.</p>
                 </li>
             </ul>
-            <h4>Frameworks/Libraries</h4>
+            <h4>5.4.2 Frameworks/Libraries</h4>
             <ul>
                 <li>
                     OpenGL:
@@ -318,7 +341,7 @@
                         detailed graphics and textures in the game.</p>
                 </li>
             </ul>
-            <h4>Tools</h4>
+            <h4>5.4.3 Tools</h4>
             <ul>
                 <li>
                     Visual Studio 2017:
@@ -333,7 +356,7 @@
                         deployment upon new push requests</p>
                 </li>
             </ul>
-            <h3>Link to repository:</h3>
+            <h3 id="5-repo">5.5 Link to repository:</h3>
             <p>For more details and insights into the 2D Platformer project, feel free to explore the GitHub 
                 repository: 
             </p>
@@ -348,12 +371,12 @@
         </div>
 
         <div class="projects" id="project-6">
-            <h1>Landlord Management System</h1>
+            <h1>6. Landlord Management System</h1>
             <h2>Overview</h2>
-            <h3>Project Aims:</h3>
+            <h3 id="6-aims">6.1 Project Aims:</h3>
             <p>The primary aim of this project is to create an application to help manage the business for landlords, 
                 whether it's a single person or a company.</p>
-            <h3>Project Features:</h3>
+            <h3 id="6-features">6.2 Project Features:</h3>
             <ul>
                 <li>
                     All in one place to view organised documents
@@ -370,11 +393,11 @@
                         such as an overview of gas costs over the year for the individual property</p>
                 </li>
             </ul>
-            <h3>Demographic</h3>
+            <h3 id="6-demographic">6.3 Demographic</h3>
             <p>This project was primarily aimed at small-scale landlords who need to incorporate technology 
                 into their business to keep up with the times.</p>
-            <h3>Technologies Used</h3>
-            <h4>Programming Language/s</h4>
+            <h3 id="6-tech">3.3 Technologies Used</h3>
+            <h4>6.4.1 Programming Language/s</h4>
             <ul>
                 <li>
                     C++:
@@ -382,7 +405,7 @@
                         models of the software.</p>
                 </li>
             </ul>
-            <h4>Frameworks/Libraries</h4>
+            <h4>6.4.2 Frameworks/Libraries</h4>
             <ul>
                 <li>
                     Qt:
@@ -391,7 +414,7 @@
                         elements in the game.</p>
                 </li>
             </ul>
-            <h4>Tools</h4>
+            <h4>6.4.3 Tools</h4>
             <ul>
                 <li>
                     Visual Studio 2022:
@@ -406,7 +429,7 @@
                         deployment upon new push requests</p>
                 </li>
             </ul>
-            <h3>Link to repository:</h3>
+            <h3 id="6-repo">6.5 Repository Link</h3>
             <p>For more details and insights into the Landlord Managment System, feel free to explore the GitHub 
                 repository: 
             </p>
@@ -426,6 +449,113 @@
         name: 'Content',
         components: {
             MobileMenuButton
+        },
+        data() {
+            return {
+                items: [
+                    {
+                        title: '>  Projects',
+                        isOpen: false,
+                        subItems: [
+                            {
+                                title: '>  Personal Projects',
+                                isOpen: false,
+                                subItems: [
+                                    {
+                                        title: '>  1. Personal Website',
+                                        isOpen: false,
+                                        links: [
+                                            { name: '1.1 Project Aims', href: '#1-aims' },
+                                            { name: '1.2 Project Features', href: '#1-features' },
+                                            { name: '1.3 Demographic', href: '#1-demographic' },
+                                            { name: '1.4 Technologies Used', href: '#1-tech' },
+                                            { name: '1.5 Repository Link', href: '#1-repo' }
+                                        ]
+                                    },
+                                    {
+                                        title: '>  2. Discord Music Bot',
+                                        isOpen: false,
+                                        links: [
+                                            { name: '2.1 Project Aims', href: '#2-aims' },
+                                            { name: '2.2 Project Features', href: '#2-features' },
+                                            { name: '2.3 Demographic', href: '#2-demographic' },
+                                            { name: '2.4 Technologies Used', href: '#2-tech' },
+                                            { name: '2.5 Repository Link', href: '#2-repo' }
+                                        ]
+                                    },
+                                    {
+                                        title: '>  3. Telegram E-Commerce Shop Bot',
+                                        isOpen: false,
+                                        links: [
+                                            { name: '3.1 Project Aims', href: '#3-aims' },
+                                            { name: '3.2 Project Features', href: '#3-features' },
+                                            { name: '3.3 Demographic', href: '#3-demographic' },
+                                            { name: '3.4 Technologies Used', href: '#3-tech' },
+                                            { name: '3.5 Repository Link', href: '#3-repo' }
+                                        ]
+                                    },
+                                    
+                                ]
+                            },
+                            {
+                                title: '>  Academic Projects',
+                                isOpen: false,
+                                subItems: [
+                                    {
+                                        title: '>  4. Movie Database',
+                                        isOpen: false,
+                                        links: [
+                                            { name: '4.1 Project Aims', href: '#4-aims' },
+                                            { name: '4.2 Project Features', href: '#4-features' },
+                                            { name: '4.3 Demographic', href: '#4-demographic' },
+                                            { name: '4.4 Technologies Used', href: '#4-tech' },
+                                            { name: '4.5 Repository Link', href: '#4-repo' }
+                                        ]
+                                    },
+                                    {
+                                        title: '>  5. 2D Platformer - Graphics 1 Project',
+                                        isOpen: false,
+                                        links: [
+                                            { name: '5.1 Project Aims', href: '#5-aims' },
+                                            { name: '5.2 Project Features', href: '#5-features' },
+                                            { name: '5.3 Demographic', href: '#5-demographic' },
+                                            { name: '5.4 Technologies Used', href: '#5-tech' },
+                                            { name: '5.5 Repository Link', href: '#5-repo' }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                title: '>  Work-in-Progress Projects',
+                                isOpen: false,
+                                subItems: [
+                                    {
+                                        title: '>  6. Landlord Management System',
+                                        isOpen: false,
+                                        links: [
+                                            { name: '6.1 Project Aims', href: '#6-aims' },
+                                            { name: '6.2 Project Features', href: '#6-features' },
+                                            { name: '6.3 Demographic', href: '#6-demographic' },
+                                            { name: '6.4 Technologies Used', href: '#6-tech' },
+                                            { name: '6.5 Repository Link', href: '#6-repo' }
+                                        ]
+                                    },
+                                ]
+                            },
+                        ]
+                    }
+                ]
+            };
+        },
+        methods: {
+            toggleExpand(item, subItem = null) {
+                console.log("Toggling:", item);
+                if (subItem) {
+                    subItem.isOpen = !subItem.isOpen;
+                } else {
+                    item.isOpen = !item.isOpen;
+                }
+            }
         }
     })
 </script>
