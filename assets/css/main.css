@@ -366,7 +366,7 @@ footer > div {
 
 /* Mobile Nav 1700 931
 Mobile phones Samsung+ - Ultra*/
-@media(min-width: 310px){
+@media(min-width: 275px){
     html{
         font-size: 18px;
     }
