@@ -85,12 +85,12 @@
                             showPrivacyPolicyError.value = false;
                             showEmailError.value = false;
                         } else {
-                            console.error('Error sending email:', response.statusText);
+                            console.error('Error sending email: 1', response.statusText);
                             // Handle error (e.g., show an error message to the user)
                             showEmailError.value = true;
                         }
                     }catch (error) {
-                        console.error('Error sending email:', error);
+                        console.error('Error sending email: 2', error);
                         // Handle network error (e.g., show an error message to the user)
                         showEmailError.value = true;
                     }
